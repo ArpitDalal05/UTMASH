@@ -1,0 +1,88 @@
+D:\edi\ARU\Android\firebase.json:13: "firebase-debug.log",
+D:\edi\ARU\Android\firebase.json:14: "firebase-debug.*.log",
+D:\edi\ARU\Android\app\src\main\AndroidManifest.xml:100: android:name="com.google.firebase.messaging.default_notification_icon"
+D:\edi\ARU\Android\app\src\main\AndroidManifest.xml:103: android:name="com.google.firebase.messaging.default_notification_color"
+D:\edi\ARU\Android\app\src\main\AndroidManifest.xml:140: <action android:name="com.google.firebase.MESSAGING_EVENT" />
+D:\edi\ARU\Android\app\src\main\res\values\strings.xml:1563: <string name="profile_provider_user_missing">Provider returned no Firebase user.</string>
+D:\edi\ARU\Android\app\src\main\res\values-ar\strings.xml:1525: <string name="profile_provider_user_missing">لم يُعِد المزوّد أي مستخدم Firebase.</string>
+D:\edi\ARU\Android\app\src\main\res\values-bn\strings.xml:1495: <string name="profile_provider_user_missing">প্রদানকারী কোনো Firebase ব্যবহারকারী ফেরত দেয়নি।</string>
+D:\edi\ARU\Android\app\src\main\res\values-de\strings.xml:1522: <string name="profile_provider_user_missing">Der Anbieter hat keinen Firebase-Nutzer zurückgegeben.</string>
+D:\edi\ARU\Android\app\src\main\res\values-es\strings.xml:1397: <string name="profile_provider_user_missing">El proveedor no devolvió un usuario de Firebase.</string>
+D:\edi\ARU\Android\app\src\main\res\values-fa\strings.xml:1506: <string name="profile_provider_user_missing">ارائه‌دهنده هیچ کاربر Firebase بازنگرداند.</string>
+D:\edi\ARU\Android\app\src\main\res\values-fil\strings.xml:1535: <string name="profile_provider_user_missing">Walang ibinalik na Firebase user ang provider.</string>
+D:\edi\ARU\Android\app\src\main\res\values-fr\strings.xml:1516: <string name="profile_provider_user_missing">Le fournisseur n\'a renvoyé aucun utilisateur Firebase.</string>
+D:\edi\ARU\Android\app\src\main\res\values-hi\strings.xml:1397: <string name="profile_provider_user_missing">प्रदाता ने कोई Firebase उपयोगकर्ता नहीं लौटाया।</string>
+D:\edi\ARU\Android\app\src\main\res\values-id\strings.xml:1526: <string name="profile_provider_user_missing">Penyedia tidak mengembalikan pengguna Firebase.</string>
+D:\edi\ARU\Android\app\src\main\res\values-ja\strings.xml:1396: <string name="profile_provider_user_missing">プロバイダーが Firebase ユーザーを返しませんでした。</string>
+D:\edi\ARU\Android\app\src\main\res\values-ku\strings.xml:1506: <string name="profile_provider_user_missing">Peydaker tu bikarhênerê Firebase venegerand.</string>
+D:\edi\ARU\Android\app\src\main\res\values-pt\strings.xml:1535: <string name="profile_provider_user_missing">O provedor não retornou nenhum usuário do Firebase.</string>
+D:\edi\ARU\Android\app\src\main\res\values-ru\strings.xml:1519: <string name="profile_provider_user_missing">Провайдер не вернул пользователя Firebase.</string>
+D:\edi\ARU\Android\app\src\main\res\values-tr\strings.xml:1555: <string name="profile_provider_user_missing">Sağlayıcı Firebase kullanıcısı döndürmedi.</string>
+D:\edi\ARU\Android\app\src\main\res\values-uk\strings.xml:1537: <string name="profile_provider_user_missing">Провайдер не повернув користувача Firebase.</string>
+D:\edi\ARU\Android\app\src\main\res\values-ur\strings.xml:1522: <string name="profile_provider_user_missing">فراہم کنندہ نے کوئی Firebase صارف واپس نہیں کیا۔</string>
+D:\edi\ARU\Android\app\src\main\res\values-vi\strings.xml:1534: <string name="profile_provider_user_missing">Nhà cung cấp không trả về người dùng Firebase nào.</string>
+D:\edi\ARU\Android\app\src\main\res\values-zh-rCN\strings.xml:1534: <string name="profile_provider_user_missing">提供商未返回 Firebase 用户。</string>
+D:\edi\ARU\Android\app\src\main\res\xml\network_security_config.xml:11: 2. We intentionally DO NOT pin Firebase / *.googleapis.com hosts.
+D:\edi\ARU\Android\app\src\main\res\xml\network_security_config.xml:12: Google rotates TLS leaves frequently and Firebase team does not
+D:\edi\ARU\Android\app\src\main\res\xml\network_security_config.xml:16: defenses for Firebase calls.
+D:\edi\ARU\Android\functions\package-lock.json:13: "firebase-admin": "^13.6.1",
+D:\edi\ARU\Android\functions\package-lock.json:14: "firebase-functions": "^7.0.6",
+D:\edi\ARU\Android\functions\package-lock.json:18: "firebase-functions-test": "^3.4.1",
+D:\edi\ARU\Android\functions\package-lock.json:19: "firebase-tools": "^14.27.0",
+D:\edi\ARU\Android\functions\package-lock.json:894: "node_modules/@firebase/app-check-interop-types": {
+D:\edi\ARU\Android\functions\package-lock.json:896: "resolved": "https://registry.npmjs.org/@firebase/app-check-interop-types/-/app-check-interop-types-0.3.3.tgz",
+D:\edi\ARU\Android\functions\package-lock.json:900: "node_modules/@firebase/app-types": {
+D:\edi\ARU\Android\functions\package-lock.json:902: "resolved": "https://registry.npmjs.org/@firebase/app-types/-/app-types-0.9.3.tgz",
+D:\edi\ARU\Android\functions\package-lock.json:906: "node_modules/@firebase/auth-interop-types": {
+D:\edi\ARU\Android\functions\package-lock.json:908: "resolved": "https://registry.npmjs.org/@firebase/auth-interop-types/-/auth-interop-types-0.2.4.tgz",
+D:\edi\ARU\Android\functions\package-lock.json:912: "node_modules/@firebase/component": {
+D:\edi\ARU\Android\functions\package-lock.json:914: "resolved": "https://registry.npmjs.org/@firebase/component/-/component-0.7.0.tgz",
+D:\edi\ARU\Android\functions\package-lock.json:918: "@firebase/util": "1.13.0",
+D:\edi\ARU\Android\functions\package-lock.json:925: "node_modules/@firebase/database": {
+D:\edi\ARU\Android\functions\package-lock.json:927: "resolved": "https://registry.npmjs.org/@firebase/database/-/database-1.1.0.tgz",
+D:\edi\ARU\Android\functions\package-lock.json:931: "@firebase/app-check-interop-types": "0.3.3",
+D:\edi\ARU\Android\functions\package-lock.json:932: "@firebase/auth-interop-types": "0.2.4",
+D:\edi\ARU\Android\functions\package-lock.json:933: "@firebase/component": "0.7.0",
+D:\edi\ARU\Android\functions\package-lock.json:934: "@firebase/logger": "0.5.0",
+D:\edi\ARU\Android\functions\package-lock.json:935: "@firebase/util": "1.13.0",
+D:\edi\ARU\Android\functions\package-lock.json:943: "node_modules/@firebase/database-compat": {
+D:\edi\ARU\Android\functions\package-lock.json:945: "resolved": "https://registry.npmjs.org/@firebase/database-compat/-/database-compat-2.1.0.tgz",
+D:\edi\ARU\Android\functions\package-lock.json:949: "@firebase/component": "0.7.0",
+D:\edi\ARU\Android\functions\package-lock.json:950: "@firebase/database": "1.1.0",
+D:\edi\ARU\Android\functions\package-lock.json:951: "@firebase/database-types": "1.0.16",
+D:\edi\ARU\Android\functions\package-lock.json:952: "@firebase/logger": "0.5.0",
+D:\edi\ARU\Android\functions\package-lock.json:953: "@firebase/util": "1.13.0",
+D:\edi\ARU\Android\functions\package-lock.json:960: "node_modules/@firebase/database-types": {
+D:\edi\ARU\Android\functions\package-lock.json:962: "resolved": "https://registry.npmjs.org/@firebase/database-types/-/database-types-1.0.16.tgz",
+D:\edi\ARU\Android\functions\package-lock.json:966: "@firebase/app-types": "0.9.3",
+D:\edi\ARU\Android\functions\package-lock.json:967: "@firebase/util": "1.13.0"
+D:\edi\ARU\Android\functions\package-lock.json:970: "node_modules/@firebase/logger": {
+D:\edi\ARU\Android\functions\package-lock.json:972: "resolved": "https://registry.npmjs.org/@firebase/logger/-/logger-0.5.0.tgz",
+D:\edi\ARU\Android\functions\package-lock.json:982: "node_modules/@firebase/util": {
+D:\edi\ARU\Android\functions\package-lock.json:984: "resolved": "https://registry.npmjs.org/@firebase/util/-/util-1.13.0.tgz",
+D:\edi\ARU\Android\functions\package-lock.json:7012: "node_modules/firebase-admin": {
+D:\edi\ARU\Android\functions\package-lock.json:7014: "resolved": "https://registry.npmjs.org/firebase-admin/-/firebase-admin-13.6.1.tgz",
+D:\edi\ARU\Android\functions\package-lock.json:7019: "@firebase/database-compat": "^2.0.0",
+D:\edi\ARU\Android\functions\package-lock.json:7020: "@firebase/database-types": "^1.0.6",
+D:\edi\ARU\Android\functions\package-lock.json:7038: "node_modules/firebase-functions": {
+D:\edi\ARU\Android\functions\package-lock.json:7040: "resolved": "https://registry.npmjs.org/firebase-functions/-/firebase-functions-7.0.6.tgz",
+D:\edi\ARU\Android\functions\package-lock.json:7051: "firebase-functions": "lib/bin/firebase-functions.js"
+D:\edi\ARU\Android\functions\package-lock.json:7059: "firebase-admin": "^11.10.0 || ^12.0.0 || ^13.0.0",
+D:\edi\ARU\Android\functions\package-lock.json:7074: "node_modules/firebase-functions-test": {
+D:\edi\ARU\Android\functions\package-lock.json:7076: "resolved": "https://registry.npmjs.org/firebase-functions-test/-/firebase-functions-test-3.4.1.tgz",
+D:\edi\ARU\Android\functions\package-lock.json:7089: "firebase-admin": "^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0",
+D:\edi\ARU\Android\functions\package-lock.json:7090: "firebase-functions": ">=4.9.0",
+D:\edi\ARU\Android\functions\package-lock.json:7094: "node_modules/firebase-tools": {
+D:\edi\ARU\Android\functions\package-lock.json:7096: "resolved": "https://registry.npmjs.org/firebase-tools/-/firebase-tools-14.27.0.tgz",
+D:\edi\ARU\Android\functions\package-lock.json:7179: "firebase": "lib/bin/firebase.js"
+D:\edi\ARU\Android\functions\package-lock.json:7185: "node_modules/firebase-tools/node_modules/mime": {
+D:\edi\ARU\Android\functions\package-lock.json:7198: "node_modules/firebase-tools/node_modules/uuid": {
+D:\edi\ARU\Android\functions\package.json:3: "description": "Cloud Functions for Firebase",
+D:\edi\ARU\Android\functions\package.json:7: "serve": "npm run build && firebase emulators:start --only functions",
+D:\edi\ARU\Android\functions\package.json:8: "shell": "npm run build && firebase functions:shell",
+D:\edi\ARU\Android\functions\package.json:10: "deploy": "npm run build && firebase deploy --only functions",
+D:\edi\ARU\Android\functions\package.json:12: "logs": "firebase functions:log",
+D:\edi\ARU\Android\functions\package.json:24: "firebase-admin": "^13.6.1",
+D:\edi\ARU\Android\functions\package.json:25: "firebase-functions": "^7.0.6",
+D:\edi\ARU\Android\functions\package.json:29: "firebase-functions-test": "^3.4.1",
+D:\edi\ARU\Android\functions\package.json:30: "firebase-tools": "^14.27.0",

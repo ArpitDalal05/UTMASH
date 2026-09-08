@@ -1,0 +1,302 @@
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\MainActivity.kt:61: import com.arpit.utmesh.messaging.call.InternetCallManager
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\MainActivity.kt:241: com.arpit.utmesh.messaging.MessagingBootstrap.ensureRegistered(applicationContext)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\MainActivity.kt:897: * from ANY screen — not only inside that contact's chat. [InternetCallManager] is a process-wide
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\MainActivity.kt:1212: InternetCallManager.accept()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\UtMeshApp.kt:15: import com.arpit.utmesh.messaging.PresenceReporter
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\UtMeshApp.kt:99: attachPresenceReporter()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\UtMeshApp.kt:106: private fun attachPresenceReporter() {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\UtMeshApp.kt:112: PresenceReporter.onAppForeground(this@UtMeshApp)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\UtMeshApp.kt:119: PresenceReporter.onAppBackground(this@UtMeshApp)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\analytics\Analytics.kt:6: import com.google.firebase.analytics.FirebaseAnalytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\analytics\Analytics.kt:20: private var instance: FirebaseAnalytics? = null
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\analytics\Analytics.kt:24: instance = FirebaseAnalytics.getInstance(context.applicationContext)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\analytics\Analytics.kt:92: fun screenView(route: String) = log(FirebaseAnalytics.Event.SCREEN_VIEW) {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\analytics\Analytics.kt:94: putString(FirebaseAnalytics.Param.SCREEN_NAME, route.take(100))
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\data\database\DatabaseInitializer.kt:18: private val auth: FirebaseAuth = FirebaseUtils.auth,
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\data\database\DatabaseInitializer.kt:19: private val db: FirebaseFirestore = FirebaseUtils.db
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\data\database\DatabaseInitializer.kt:36: // (created by MessagingBootstrap so a QR-added contact can be reached online without an
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\data\database\FirebaseUtils.kt:6: object FirebaseUtils {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\data\database\FirebaseUtils.kt:7: val auth: FirebaseAuth by lazy { FirebaseAuth.getInstance() }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\data\database\FirebaseUtils.kt:8: val db: FirebaseFirestore by lazy { FirebaseFirestore.getInstance() }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\data\profile\ProfilePhotoDeleteWorker.kt:28: val user = FirebaseAuth.getInstance().currentUser?.takeUnless { it.isAnonymous }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\data\profile\ProfilePhotoDeleteWorker.kt:30: val doc = FirebaseFirestore.getInstance().collection("users").document(user.uid)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\data\profile\ProfilePhotoDeleteWorker.kt:47: FirebaseStorage.getInstance().reference
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\data\profile\ProfilePhotoUploadWorker.kt:49: val auth = FirebaseAuth.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\data\profile\ProfilePhotoUploadWorker.kt:60: val firestore = FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\data\profile\ProfilePhotoUploadWorker.kt:76: val storageRef = FirebaseStorage.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\dossier\TrustDossierApi.kt:79: private val auth: FirebaseAuth = FirebaseAuth.getInstance(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\AgencyMessaging.kt:66: private val functions: FirebaseFunctions = FirebaseFunctions.getInstance(REGION),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\AgencyMessaging.kt:67: private val firestore: FirebaseFirestore = FirebaseFirestore.getInstance(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\AgencyMessaging.kt:68: private val auth: FirebaseAuth = FirebaseAuth.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\AuthorityBridgeContacts.kt:33: val myUid = FirebaseAuth.getInstance().currentUser?.uid ?: return@withContext
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\AuthorityMlsTransport.kt:141: private val firestore: FirebaseFirestore = FirebaseFirestore.getInstance(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\AuthorityRoster.kt:26: private val functions: FirebaseFunctions = FirebaseFunctions.getInstance(REGION),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\ChannelAttachments.kt:145: val uid = FirebaseAuth.getInstance().currentUser?.uid
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\ChannelAttachments.kt:181: val uid = FirebaseAuth.getInstance().currentUser?.uid
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\ChannelAttachments.kt:191: val reference = FirebaseStorage.getInstance().reference.child(attachment.path)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\ChannelAttachments.kt:250: runCatching { FirebaseStorage.getInstance().reference.child(attachment.path).delete().await() }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\ChannelAttachments.kt:325: val cipher = FirebaseStorage.getInstance().reference
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\CrisisConnectMessagingService.kt:71: if (FirebaseAuth.getInstance().currentUser != null) {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\CrisisConnectMessagingService.kt:109: val myUid = FirebaseAuth.getInstance().currentUser?.uid ?: return
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\CrisisConnectMessagingService.kt:122: FirebaseFirestore.getInstance().collection("messages")
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\CrisisConnectMessagingService.kt:210: val myUid = FirebaseAuth.getInstance().currentUser?.uid ?: return
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\CrisisConnectMessagingService.kt:217: val firestore = FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\CrisisConnectMessagingService.kt:302: val myUid = FirebaseAuth.getInstance().currentUser?.uid ?: return
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\CrisisConnectMessagingService.kt:305: FirebaseFirestore.getInstance().document("authorityMlsV2/$conversationId").get(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\CrisisConnectMessagingService.kt:349: val myUid = FirebaseAuth.getInstance().currentUser?.uid ?: return
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\CrisisConnectMessagingService.kt:350: val firestore = FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\CrisisConnectMessagingService.kt:421: val myUid = FirebaseAuth.getInstance().currentUser?.uid
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\CrisisConnectMessagingService.kt:661: FirebaseFirestore.getInstance().collection("users").document(uid).get(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\HierarchyMessaging.kt:127: private val firestore: FirebaseFirestore = FirebaseFirestore.getInstance(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\HierarchyMessaging.kt:128: private val auth: FirebaseAuth = FirebaseAuth.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetChatTransport.kt:21: class InternetChatTransport(
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetChatTransport.kt:401: private const val TAG = "InternetChatTransport"
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessageReceiver.kt:14: import com.arpit.utmesh.messaging.call.InternetCallManager
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessageReceiver.kt:207: if (content.templateCode == InternetChatTransport.DELIVERY_RECEIPT_TEMPLATE ||
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessageReceiver.kt:208: content.templateCode == InternetChatTransport.READ_RECEIPT_TEMPLATE
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessageReceiver.kt:219: if (content.templateCode == InternetChatTransport.TYPING_SIGNAL_TEMPLATE) {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessageReceiver.kt:230: if (content.templateCode == InternetChatTransport.IDENTITY_ANNOUNCE_TEMPLATE) {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessageReceiver.kt:296: if (content.templateCode == InternetChatTransport.PARENT_REQUEST_TEMPLATE) {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessageReceiver.kt:305: if (content.templateCode == InternetChatTransport.PARENT_RESPONSE_TEMPLATE) {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessageReceiver.kt:327: if (content.templateCode == InternetChatTransport.CALL_SIGNAL_TEMPLATE) {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessageReceiver.kt:330: InternetCallManager.onSignal(contact, sender, org.json.JSONObject(content.text))
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessageReceiver.kt:338: if (content.templateCode == InternetChatTransport.SOS_LOCATION_UPDATE_TEMPLATE) {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessageReceiver.kt:387: val messageType = if (content.templateCode == InternetChatTransport.SOS_ALERT_TEMPLATE) {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessageReceiver.kt:440: if (content.templateCode == InternetChatTransport.READ_RECEIPT_TEMPLATE) {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessageReceiver.kt:464: InternetChatTransport(context).sendReceipt(
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessageReceiver.kt:466: templateCode = InternetChatTransport.DELIVERY_RECEIPT_TEMPLATE,
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessageReceiver.kt:597: val uid = FirebaseAuth.getInstance().currentUser?.uid ?: return
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessageReceiver.kt:602: registration = FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessagingClient.kt:44: private val functions: FirebaseFunctions = FirebaseFunctions.getInstance(REGION),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessagingClient.kt:45: private val auth: FirebaseAuth = FirebaseAuth.getInstance(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessagingClient.kt:46: private val firestore: FirebaseFirestore = FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\MessagingBootstrap.kt:41: object MessagingBootstrap {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\MessagingBootstrap.kt:43: private const val TAG = "MessagingBootstrap"
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\MessagingBootstrap.kt:96: val token = FirebaseMessaging.getInstance().token.await()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\MessagingBootstrap.kt:117: com.arpit.utmesh.messaging.call.InternetCallManager.init(context) { peer, json ->
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\MessagingBootstrap.kt:118: InternetChatTransport(context).sendCallSignal(peer, json)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\MessagingBootstrap.kt:140: ?: FirebaseAuth.getInstance().currentUser?.phoneNumber?.takeIf { it.isNotBlank() }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\MessagingBootstrap.kt:146: FirebaseFirestore.getInstance().document("users/$resolvedUid").get().await().getString("photoURL")
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\MessagingBootstrap.kt:169: val uid = FirebaseAuth.getInstance().currentUser?.uid ?: return
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\MessagingBootstrap.kt:183: FirebaseAuth.getInstance().currentUser?.uid?.let { return it }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\MessagingBootstrap.kt:199: val auth = FirebaseAuth.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\MessagingBootstrap.kt:212: runCatching { FirebaseAuth.getInstance().signInAnonymously().await().user?.uid }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\ParentRequestNotifier.kt:190: * [InternetChatTransport.PARENT_RESPONSE_TEMPLATE] answer back to the child device and
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\ParentRequestNotifier.kt:208: InternetChatTransport(appContext).sendParentResponse(contact, accepted)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\PresenceReporter.kt:34: object PresenceReporter {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\PresenceReporter.kt:97: FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\PresenceReporter.kt:119: FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\PresenceReporter.kt:133: runCatching { FirebaseAuth.getInstance().currentUser?.uid }.getOrNull()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\PresenceReporter.kt:146: FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\PresenceReporter.kt:157: FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\ResourceAlertWakeClient.kt:53: val user = FirebaseAuth.getInstance().currentUser?.takeUnless { it.isAnonymous } ?: return false
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\ResourceAlertWakeClient.kt:67: val user = FirebaseAuth.getInstance().currentUser?.takeUnless { it.isAnonymous } ?: return false
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\ResourceAlertWakeClient.kt:83: val user = FirebaseAuth.getInstance().currentUser
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\AuthorityCallReceiver.kt:24: * [InternetCallManager] — the same singleton whose state the global overlay renders. This is the SINGLE
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\AuthorityCallReceiver.kt:27: * Started once from [com.arpit.utmesh.messaging.MessagingBootstrap] after sign-in; a non-agency
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\AuthorityCallReceiver.kt:48: val uid = FirebaseAuth.getInstance().currentUser?.uid
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\AuthorityCallReceiver.kt:113: FirebaseFirestore.getInstance().document("users/$uid").get().await().getString("agencySlug")
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\AuthorityCallSignaling.kt:22: * It plugs into the shared [InternetCallManager] WebRTC engine: [sender] is passed to
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\AuthorityCallSignaling.kt:29: firestore: FirebaseFirestore = FirebaseFirestore.getInstance(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\AuthorityCallSignaling.kt:42: /** The transport override handed to InternetCallManager — writes each signal as a web callSignals doc. */
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\AuthorityCallSignaling.kt:43: val sender = InternetCallManager.SignalSender { contact, signalJson ->
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\AuthorityCallSignaling.kt:88: * Subscribes to incoming signals addressed to me and feeds them to [InternetCallManager]. Dedups by
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:53: * The notification re-renders from [InternetCallManager.call] as the call changes. Android 14 requires
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:76: InternetCallManager.call.collect { call -> onCallChanged(call) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:81: SfuAuthorityCallManager.uiCall.collect { if (foregroundActive) onCallChanged(InternetCallManager.call.value) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:104: val call = InternetCallManager.call.value
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:110: call.state != InternetCallManager.State.ENDED &&
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:111: call.state != InternetCallManager.State.IDLE
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:128: val ringingOnly = call?.state == InternetCallManager.State.INCOMING ||
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:158: if (sfuUiCall() != null && InternetCallManager.call.value == null) {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:161: InternetCallManager.startScreenShare(data)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:169: call.state == InternetCallManager.State.ENDED ||
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:170: call.state == InternetCallManager.State.IDLE) && sfuUiCall() != null
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:184: if (sfuOwns) SfuAuthorityCallManager.accept() else InternetCallManager.accept()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:188: if (sfuOwns) SfuAuthorityCallManager.reject() else InternetCallManager.reject()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:190: if (sfuOwns) SfuAuthorityCallManager.end() else InternetCallManager.end()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:192: if (sfuOwns) SfuAuthorityCallManager.setMuted(true) else InternetCallManager.setMuted(true)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:194: if (sfuOwns) SfuAuthorityCallManager.setMuted(false) else InternetCallManager.setMuted(false)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:201: private fun onCallChanged(call: InternetCallManager.CallInfo?) {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:203: call.state == InternetCallManager.State.ENDED ||
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:204: call.state == InternetCallManager.State.IDLE
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:233: if (call.state == InternetCallManager.State.INCOMING) {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:383: private fun incomingCallKey(call: InternetCallManager.CallInfo?): String =
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:456: val call = InternetCallManager.call.value
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:457: val notification = if (call?.state == InternetCallManager.State.INCOMING) {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:472: private fun buildNotification(call: InternetCallManager.CallInfo?): Notification {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:475: call.state == InternetCallManager.State.ENDED ||
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:476: call.state == InternetCallManager.State.IDLE
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:488: if (call.state == InternetCallManager.State.INCOMING) {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:494: InternetCallManager.State.DIALING -> getString(R.string.internet_call_dialing)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallForegroundService.kt:495: InternetCallManager.State.CONNECTING -> getString(R.string.internet_call_connecting)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\InternetCallManager.kt:69: object InternetCallManager {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\TurnCredentialsProvider.kt:18: * Supplies ICE servers for [InternetCallManager]. The relay is Cloudflare Realtime's global-anycast
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\TurnCredentialsProvider.kt:25: * successful [refresh]. [InternetCallManager.init] warms the cache at startup so the first call
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\TurnCredentialsProvider.kt:67: val user = FirebaseAuth.getInstance().currentUser
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\sfu\SfuApiClient.kt:27: private val auth: FirebaseAuth = FirebaseAuth.getInstance(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\sfu\SfuAuthorityCallManager.kt:39: * Process-wide orchestration for an SFU authority call — the SFU counterpart of [InternetCallManager].
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\sfu\SfuAuthorityCallManager.kt:110: val auth = com.google.firebase.auth.FirebaseAuth.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\sfu\SfuAuthorityCallManager.kt:112: val doc = com.google.firebase.firestore.FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\sfu\SfuCallConfig.kt:5: * P2P [com.arpit.utmesh.messaging.call.InternetCallManager] for authority (hierarchy + agency)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\sfu\SfuRingManager.kt:27: * Scoped to AUTHORITY (hierarchy + agency) calls only; citizen P2P calls keep [InternetCallManager].
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\sfu\SfuRoomClient.kt:73: private val firestore: FirebaseFirestore = FirebaseFirestore.getInstance(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\nearby\NearbyPairingServer.kt:204: uid = FirebaseAuth.getInstance().currentUser?.uid.orEmpty(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\nearby\NearbyPairingSupport.kt:24: val uid = FirebaseAuth.getInstance().currentUser?.uid.orEmpty()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\nearby\NearbyPairingSupport.kt:32: FirebaseAuth.getInstance().currentUser?.phoneNumber?.trim()?.takeIf { it.startsWith("+") }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\nearby\NearbyPairingSupport.kt:46: val myUid = FirebaseAuth.getInstance().currentUser?.uid.orEmpty()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\AdvancedSettingsViewModel.kt:10: import com.arpit.utmesh.messaging.PresenceReporter
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\AdvancedSettingsViewModel.kt:21: import com.google.firebase.crashlytics.FirebaseCrashlytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\AdvancedSettingsViewModel.kt:27: runCatching { FirebaseCrashlytics.getInstance().recordException(throwable) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\AdvancedSettingsViewModel.kt:62: shareLastSeenEnabled = prefs[PresenceReporter.SHARE_LAST_SEEN_KEY] ?: true,
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\AdvancedSettingsViewModel.kt:82: prefs[PresenceReporter.SHARE_LAST_SEEN_KEY] = enabled
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\AdvancedSettingsViewModel.kt:85: PresenceReporter.onSharingPreferenceChanged(appContext, enabled)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\MainScreen.kt:693: FirebaseAuth.getInstance().currentUser?.takeUnless { it.isAnonymous }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\NewChat.kt:117: val user = FirebaseAuth.getInstance().currentUser?.takeUnless { it.isAnonymous }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\NewChat.kt:125: FirebaseFirestore.getInstance().document("users/${user.uid}").get().await()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\NewChat.kt:342: com.google.firebase.auth.FirebaseAuth.getInstance().currentUser?.uid?.let {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\NewChatViewModel.kt:33: import com.google.firebase.crashlytics.FirebaseCrashlytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\NewChatViewModel.kt:42: runCatching { FirebaseCrashlytics.getInstance().recordException(throwable) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\SettingsViewModel.kt:23: import com.arpit.utmesh.messaging.InternetChatTransport
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\SettingsViewModel.kt:24: import com.arpit.utmesh.messaging.MessagingBootstrap
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\SettingsViewModel.kt:27: import com.google.firebase.crashlytics.FirebaseCrashlytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\SettingsViewModel.kt:35: runCatching { FirebaseCrashlytics.getInstance().recordException(throwable) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\SettingsViewModel.kt:151: InternetChatTransport(appContext).sendParentRequest(contact)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\SettingsViewModel.kt:178: runCatching { MessagingBootstrap.republishIdentity(appContext) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\WelcomeScreen.kt:97: import com.arpit.utmesh.messaging.MessagingBootstrap
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\WelcomeScreen.kt:234: runCatching { MessagingBootstrap.ensureRegistered(context, phone = number) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\authority\AuthorityChannelThreadScreen.kt:170: import com.arpit.utmesh.messaging.InternetChatTransport
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\authority\AuthorityChannelThreadScreen.kt:224: private val auth = FirebaseAuth.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\authority\AuthorityChannelThreadScreen.kt:277: private val internetTransport by lazy { InternetChatTransport(getApplication()) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\authority\AuthorityChannelThreadScreen.kt:1369: // Outgoing calls go through the SAME shared InternetCallManager ChatScreen uses, so the global
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\BleChatViewModel.kt:84: import com.google.firebase.crashlytics.FirebaseCrashlytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\BleChatViewModel.kt:89: runCatching { FirebaseCrashlytics.getInstance().recordException(throwable) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenRoute.kt:227: import com.arpit.utmesh.messaging.call.InternetCallManager
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenRoute.kt:1109: call.state != InternetCallManager.State.ENDED &&
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenRoute.kt:1110: call.state != InternetCallManager.State.IDLE
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:65: import com.arpit.utmesh.messaging.InternetChatTransport
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:66: import com.arpit.utmesh.messaging.call.InternetCallManager
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:114: import com.google.firebase.crashlytics.FirebaseCrashlytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:166: runCatching { FirebaseCrashlytics.getInstance().recordException(throwable) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:270: val internetCall: StateFlow<InternetCallManager.CallInfo?> = InternetCallManager.call
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:300: private val internetChatTransport = InternetChatTransport(context)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:930: internetChatTransport.isAvailable() &&
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:956: val sent = internetChatTransport.sendAttachment(
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:1109: internetChatTransport.isAvailable() &&
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:1112: val sent = internetChatTransport.sendAttachment(
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:1210: internetChatTransport.isAvailable() &&
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:1230: val sent = internetChatTransport.sendAttachment(
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:1402: FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:1453: if (!internetChatTransport.isAvailable()) return
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:1455: runCatching { internetChatTransport.sendTypingSignal(contact) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:1491: internetChatTransport.isAvailable() &&
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:1495: InternetCallManager.startCall(internetContact)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:1604: // call UI. They act on [InternetCallManager] whose state is exposed via [internetCall]. ----
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:1611: InternetCallManager.accept()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:1615: InternetCallManager.reject()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:1619: InternetCallManager.end()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:1623: InternetCallManager.setMuted(muted)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:1722: internetChatTransport.isAvailable()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:1786: internetChatTransport.sendReceipt(
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:1788: templateCode = InternetChatTransport.READ_RECEIPT_TEMPLATE,
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:1932: internetChatTransport.isAvailable() &&
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:1948: val sent = internetChatTransport.sendText(
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:2232: val myUid = FirebaseAuth.getInstance().currentUser?.uid
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:2797: return activeContact?.supportsInternet == true && internetChatTransport.isAvailable()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:2818: return activeContact?.supportsInternet == true && internetChatTransport.isAvailable()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:2886: return activeContact?.supportsInternet == true && internetChatTransport.isAvailable()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:3319: "internetAvailable=${internetChatTransport.isAvailable()}"
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:3329: internetChatTransport.isAvailable()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:3447: val internetAvailable = internetChatTransport.isAvailable()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:3480: activeContact?.supportsInternet == true && !internetChatTransport.isAvailable()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\GattMeshViewModel.kt:45: import com.google.firebase.crashlytics.FirebaseCrashlytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\GattMeshViewModel.kt:51: runCatching { FirebaseCrashlytics.getInstance().recordException(throwable) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlay.kt:88: import com.arpit.utmesh.messaging.call.InternetCallManager
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlay.kt:153: * Full-screen overlay for an internet (WebRTC) call, driven by [InternetCallManager]'s state
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlay.kt:167: call: InternetCallManager.CallInfo,
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlay.kt:169: videoStreams: InternetCallManager.VideoStreams,
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlay.kt:183: val isIncomingRinging = call.incoming && call.state == InternetCallManager.State.INCOMING
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlay.kt:184: val isRingingPhase = call.state == InternetCallManager.State.INCOMING ||
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlay.kt:185: call.state == InternetCallManager.State.DIALING ||
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlay.kt:186: call.state == InternetCallManager.State.CONNECTING
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlay.kt:187: val showVideoControls = call.state == InternetCallManager.State.ACTIVE && call.canUseVideo
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlay.kt:192: val immersiveVideo = hasAnyVideo && call.state == InternetCallManager.State.ACTIVE
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlay.kt:369: call.state == InternetCallManager.State.ACTIVE && call.connectedAt != null -> Text(
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlay.kt:383: call.state == InternetCallManager.State.ACTIVE &&
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlay.kt:384: call.quality != InternetCallManager.CallQuality.GOOD
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlay.kt:387: val poor = call.quality == InternetCallManager.CallQuality.POOR
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlay.kt:812: call: InternetCallManager.CallInfo,
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlay.kt:863: val active = call.state == InternetCallManager.State.ACTIVE && call.connectedAt != null
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlay.kt:911: private fun stateLabelRes(state: InternetCallManager.State, incoming: Boolean): Int = when (state) {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlay.kt:912: InternetCallManager.State.INCOMING -> R.string.internet_call_incoming
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlay.kt:913: InternetCallManager.State.DIALING -> R.string.internet_call_dialing
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlay.kt:914: InternetCallManager.State.CONNECTING -> R.string.internet_call_connecting
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlay.kt:915: InternetCallManager.State.ACTIVE -> R.string.internet_call_active
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlayHost.kt:17: import com.arpit.utmesh.messaging.call.InternetCallManager
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlayHost.kt:21: * of whatever screen is showing whenever [InternetCallManager] has an active call — so an incoming call
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlayHost.kt:32: val call by InternetCallManager.call.collectAsStateWithLifecycle()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlayHost.kt:33: val videoStreams by InternetCallManager.videoStreams.collectAsStateWithLifecycle()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlayHost.kt:35: it.state != InternetCallManager.State.ENDED && it.state != InternetCallManager.State.IDLE
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlayHost.kt:39: if (active.callId == minimizedCallId && active.state != InternetCallManager.State.INCOMING) {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlayHost.kt:43: onHangup = { InternetCallManager.end() }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlayHost.kt:49: ) { granted -> if (granted) InternetCallManager.accept() }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlayHost.kt:53: ) { granted -> if (granted) InternetCallManager.toggleCamera() }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlayHost.kt:68: eglContext = InternetCallManager.eglBaseContext(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlayHost.kt:73: InternetCallManager.accept()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlayHost.kt:78: onReject = { InternetCallManager.reject() },
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlayHost.kt:79: onEnd = { InternetCallManager.end() },
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlayHost.kt:80: onToggleMute = { InternetCallManager.setMuted(!active.muted) },
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlayHost.kt:81: onToggleSpeaker = { InternetCallManager.setSpeaker(!active.speakerOn) },
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlayHost.kt:88: InternetCallManager.toggleCamera()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlayHost.kt:95: InternetCallManager.stopScreenShare()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\InternetCallOverlayHost.kt:101: onSwitchCamera = { InternetCallManager.switchCamera() },
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\SfuCallOverlayHost.kt:18: import com.arpit.utmesh.messaging.call.InternetCallManager
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\SfuCallOverlayHost.kt:27: * [InternetCallManager.CallInfo], so an SFU call looks exactly like a citizen call — ring,
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\SfuCallOverlayHost.kt:60: val info = InternetCallManager.CallInfo(
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\SfuCallOverlayHost.kt:66: SfuCallState.OUTGOING -> InternetCallManager.State.DIALING
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\SfuCallOverlayHost.kt:67: SfuCallState.INCOMING -> InternetCallManager.State.INCOMING
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\SfuCallOverlayHost.kt:68: SfuCallState.CONNECTING -> InternetCallManager.State.CONNECTING
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\SfuCallOverlayHost.kt:69: SfuCallState.CONNECTED -> InternetCallManager.State.ACTIVE
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\SfuCallOverlayHost.kt:70: SfuCallState.ENDED -> InternetCallManager.State.ENDED
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\SfuCallOverlayHost.kt:71: SfuCallState.IDLE -> InternetCallManager.State.IDLE
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\SfuCallOverlayHost.kt:85: if (minimized && info.state != InternetCallManager.State.INCOMING) {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\SfuCallOverlayHost.kt:97: videoStreams = InternetCallManager.VideoStreams(
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\QR\QRHelpers.kt:1010: val myUid = FirebaseAuth.getInstance().currentUser?.uid?.trim().orEmpty()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\QR\QRHelpers.kt:1052: val sent = com.arpit.utmesh.messaging.InternetChatTransport(appContext)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\settings\ProfileViewModel.kt:23: import com.arpit.utmesh.security.FirebaseAppCheckFailures
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\settings\ProfileViewModel.kt:72: import com.google.firebase.crashlytics.FirebaseCrashlytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\settings\ProfileViewModel.kt:128: private val auth: FirebaseAuth = FirebaseAuth.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\settings\ProfileViewModel.kt:129: private val firestore: FirebaseFirestore = FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\settings\ProfileViewModel.kt:131: private val functions: FirebaseFunctions = FirebaseFunctions.getInstance(FUNCTIONS_REGION)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\settings\ProfileViewModel.kt:134: runCatching { FirebaseCrashlytics.getInstance().recordException(throwable) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\settings\ProfileViewModel.kt:683: runCatching { FirebaseCrashlytics.getInstance().recordException(error) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\settings\ProfileViewModel.kt:686: if (FirebaseAppCheckFailures.isLikelyAppCheckFailure(error)) {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\settings\ProfileViewModel.kt:1982: if (FirebaseAppCheckFailures.isLikelyAppCheckFailure(
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Tools\MetalDetectorViewModel.kt:27: import com.google.firebase.crashlytics.FirebaseCrashlytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Tools\MetalDetectorViewModel.kt:40: runCatching { FirebaseCrashlytics.getInstance().recordException(throwable) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Tools\OfflineMapViewModel.kt:10: import com.google.firebase.crashlytics.FirebaseCrashlytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Tools\OfflineMapViewModel.kt:46: runCatching { FirebaseCrashlytics.getInstance().recordException(throwable) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Tools\SignalFinderViewModel.kt:30: import com.google.firebase.crashlytics.FirebaseCrashlytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Tools\SignalFinderViewModel.kt:44: runCatching { FirebaseCrashlytics.getInstance().recordException(throwable) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Tools\WhistleViewModel.kt:18: import com.google.firebase.crashlytics.FirebaseCrashlytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Tools\WhistleViewModel.kt:45: runCatching { FirebaseCrashlytics.getInstance().recordException(throwable) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\security\CertificateRenewalWorker.kt:35: val user = FirebaseAuth.getInstance().currentUser
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\security\FirebaseAppCheckFailures.kt:6: object FirebaseAppCheckFailures {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\security\FirebaseRoleHelper.kt:47: auth: FirebaseAuth = FirebaseAuth.getInstance(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\security\FirebaseRoleHelper.kt:48: firestore: FirebaseFirestore = FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\security\FirebaseRoleHelper.kt:73: auth: FirebaseAuth = FirebaseAuth.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\security\FirebaseRoleHelper.kt:104: auth: FirebaseAuth = FirebaseAuth.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\service\RfcommForegroundService.kt:1574: val uid = FirebaseAuth.getInstance().currentUser?.uid?.trim()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\service\p2p\P2pGattServerService.kt:1560: val localUid = runCatching { FirebaseAuth.getInstance().currentUser?.uid }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\service\p2p\P2pShareResolver.kt:340: val localPeerUid = com.google.firebase.auth.FirebaseAuth.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\service\sos\SosCloudReporter.kt:240: FirebaseFunctions.getInstance(FUNCTIONS_REGION)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\service\sos\SosCloudReporter.kt:255: val auth = FirebaseAuth.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\service\sos\SosContactNotifier.kt:16: import com.arpit.utmesh.messaging.InternetChatTransport
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\service\sos\SosContactNotifier.kt:117: val transport = InternetChatTransport(appContext)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\service\sos\SosContactNotifier.kt:156: priority = InternetChatTransport.PRIORITY_HIGH,
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\service\sos\SosContactNotifier.kt:157: templateCode = InternetChatTransport.SOS_ALERT_TEMPLATE
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\service\sos\SosContactNotifier.kt:198: priority = InternetChatTransport.PRIORITY_NORMAL,
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\service\sos\SosContactNotifier.kt:199: templateCode = InternetChatTransport.SOS_LOCATION_UPDATE_TEMPLATE
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\service\sos\SosContactNotifier.kt:266: val transport = InternetChatTransport(appContext)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\service\sos\SosContactNotifier.kt:284: priority = InternetChatTransport.PRIORITY_HIGH
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\sync\MobileSyncClient.kt:102: val user = FirebaseAuth.getInstance().currentUser?.takeUnless { it.isAnonymous } ?: return

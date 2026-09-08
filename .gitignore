@@ -1,0 +1,73 @@
+# Gradle
+.gradle/
+**/build/
+.kotlin/
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+
+# Local machine configuration
+local.properties
+/keystore.properties
+
+# Signing keys
+*.jks
+*.keystore
+
+# Android generated files
+captures/
+.externalNativeBuild/
+.cxx/
+
+# APK / AAB outputs
+*.apk
+*.aab
+
+# Archives
+*.rar
+*.zip
+*.7z
+
+# Backup / temporary files
+*.bak
+*.tmp
+*.temp
+
+# Project-local disabled/backup material
+_disabled_crisis_ai/
+_firebase_cleanup_backup/
+firebase-cleanup-backup/
+
+# Firebase configuration / secrets
+app/google-services.json
+app/src/internal/google-services.json
+.secrets/
+
+# Firebase CLI logs
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+*.firebase-debug.log
+
+# AI model artifacts
+*.litertlm
+*.tflite
+*.gguf
+*.safetensors
+*.onnx
+crisis_sentinel_models/
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Legacy Firebase backend — retained locally, not part of offline UTMASH
+firebase.json
+firestore.rules
+functions/
+
+# Generated baseline profile output
+**/src/**/generated/

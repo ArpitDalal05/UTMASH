@@ -1,0 +1,32 @@
+package com.arpit.utmesh.data
+
+data class MeshChatMessage(
+    val id: String,
+    val text: String,
+    val senderLabel: String?,
+    val sourceAddress: String? = null,
+    val originVerifiedRole: String? = null,
+    val originVerifiedAtMillis: Long? = null,
+    val isLocal: Boolean,
+    val timestampMillis: Long,
+    val receivedTimestampMillis: Long? = null,
+    val status: MeshMessageStatus = MeshMessageStatus.SENT,
+    val sentTo: List<String> = emptyList(),
+    val deliveredTo: List<String> = emptyList(),
+    val readBy: List<String> = emptyList(),
+    val imageFileName: String? = null,
+    val imageThumbnailName: String? = null,
+    val imageWidth: Int? = null,
+    val imageHeight: Int? = null,
+    val voiceFileName: String? = null,
+    val voiceDurationMillis: Long? = null
+)
+
+enum class MeshMessageStatus {
+    QUEUED,
+    SENDING,
+    SENT,
+    DELIVERED,
+    READ,
+    FAILED
+}

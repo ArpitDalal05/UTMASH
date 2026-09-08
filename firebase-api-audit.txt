@@ -1,0 +1,122 @@
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\analytics\Analytics.kt:6: import com.google.firebase.analytics.FirebaseAnalytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\analytics\Analytics.kt:20: private var instance: FirebaseAnalytics? = null
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\analytics\Analytics.kt:24: instance = FirebaseAnalytics.getInstance(context.applicationContext)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\analytics\Analytics.kt:92: fun screenView(route: String) = log(FirebaseAnalytics.Event.SCREEN_VIEW) {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\analytics\Analytics.kt:94: putString(FirebaseAnalytics.Param.SCREEN_NAME, route.take(100))
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\data\database\DatabaseInitializer.kt:18: private val auth: FirebaseAuth = FirebaseUtils.auth,
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\data\database\DatabaseInitializer.kt:19: private val db: FirebaseFirestore = FirebaseUtils.db
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\data\database\FirebaseUtils.kt:6: object FirebaseUtils {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\data\database\FirebaseUtils.kt:7: val auth: FirebaseAuth by lazy { FirebaseAuth.getInstance() }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\data\database\FirebaseUtils.kt:8: val db: FirebaseFirestore by lazy { FirebaseFirestore.getInstance() }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\data\profile\ProfilePhotoDeleteWorker.kt:28: val user = FirebaseAuth.getInstance().currentUser?.takeUnless { it.isAnonymous }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\data\profile\ProfilePhotoDeleteWorker.kt:30: val doc = FirebaseFirestore.getInstance().collection("users").document(user.uid)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\data\profile\ProfilePhotoDeleteWorker.kt:47: FirebaseStorage.getInstance().reference
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\data\profile\ProfilePhotoUploadWorker.kt:49: val auth = FirebaseAuth.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\data\profile\ProfilePhotoUploadWorker.kt:60: val firestore = FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\data\profile\ProfilePhotoUploadWorker.kt:76: val storageRef = FirebaseStorage.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\dossier\TrustDossierApi.kt:79: private val auth: FirebaseAuth = FirebaseAuth.getInstance(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\AgencyMessaging.kt:66: private val functions: FirebaseFunctions = FirebaseFunctions.getInstance(REGION),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\AgencyMessaging.kt:67: private val firestore: FirebaseFirestore = FirebaseFirestore.getInstance(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\AgencyMessaging.kt:68: private val auth: FirebaseAuth = FirebaseAuth.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\AuthorityBridgeContacts.kt:33: val myUid = FirebaseAuth.getInstance().currentUser?.uid ?: return@withContext
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\AuthorityMlsTransport.kt:141: private val firestore: FirebaseFirestore = FirebaseFirestore.getInstance(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\AuthorityRoster.kt:26: private val functions: FirebaseFunctions = FirebaseFunctions.getInstance(REGION),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\ChannelAttachments.kt:145: val uid = FirebaseAuth.getInstance().currentUser?.uid
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\ChannelAttachments.kt:181: val uid = FirebaseAuth.getInstance().currentUser?.uid
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\ChannelAttachments.kt:191: val reference = FirebaseStorage.getInstance().reference.child(attachment.path)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\ChannelAttachments.kt:250: runCatching { FirebaseStorage.getInstance().reference.child(attachment.path).delete().await() }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\ChannelAttachments.kt:325: val cipher = FirebaseStorage.getInstance().reference
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\CrisisConnectMessagingService.kt:71: if (FirebaseAuth.getInstance().currentUser != null) {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\CrisisConnectMessagingService.kt:109: val myUid = FirebaseAuth.getInstance().currentUser?.uid ?: return
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\CrisisConnectMessagingService.kt:122: FirebaseFirestore.getInstance().collection("messages")
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\CrisisConnectMessagingService.kt:210: val myUid = FirebaseAuth.getInstance().currentUser?.uid ?: return
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\CrisisConnectMessagingService.kt:217: val firestore = FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\CrisisConnectMessagingService.kt:302: val myUid = FirebaseAuth.getInstance().currentUser?.uid ?: return
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\CrisisConnectMessagingService.kt:305: FirebaseFirestore.getInstance().document("authorityMlsV2/$conversationId").get(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\CrisisConnectMessagingService.kt:349: val myUid = FirebaseAuth.getInstance().currentUser?.uid ?: return
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\CrisisConnectMessagingService.kt:350: val firestore = FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\CrisisConnectMessagingService.kt:421: val myUid = FirebaseAuth.getInstance().currentUser?.uid
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\CrisisConnectMessagingService.kt:661: FirebaseFirestore.getInstance().collection("users").document(uid).get(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\HierarchyMessaging.kt:127: private val firestore: FirebaseFirestore = FirebaseFirestore.getInstance(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\HierarchyMessaging.kt:128: private val auth: FirebaseAuth = FirebaseAuth.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessageReceiver.kt:597: val uid = FirebaseAuth.getInstance().currentUser?.uid ?: return
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessageReceiver.kt:602: registration = FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessagingClient.kt:44: private val functions: FirebaseFunctions = FirebaseFunctions.getInstance(REGION),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessagingClient.kt:45: private val auth: FirebaseAuth = FirebaseAuth.getInstance(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\InternetMessagingClient.kt:46: private val firestore: FirebaseFirestore = FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\MessagingBootstrap.kt:96: val token = FirebaseMessaging.getInstance().token.await()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\MessagingBootstrap.kt:140: ?: FirebaseAuth.getInstance().currentUser?.phoneNumber?.takeIf { it.isNotBlank() }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\MessagingBootstrap.kt:146: FirebaseFirestore.getInstance().document("users/$resolvedUid").get().await().getString("photoURL")
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\MessagingBootstrap.kt:169: val uid = FirebaseAuth.getInstance().currentUser?.uid ?: return
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\MessagingBootstrap.kt:183: FirebaseAuth.getInstance().currentUser?.uid?.let { return it }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\MessagingBootstrap.kt:199: val auth = FirebaseAuth.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\MessagingBootstrap.kt:212: runCatching { FirebaseAuth.getInstance().signInAnonymously().await().user?.uid }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\PresenceReporter.kt:97: FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\PresenceReporter.kt:119: FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\PresenceReporter.kt:133: runCatching { FirebaseAuth.getInstance().currentUser?.uid }.getOrNull()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\PresenceReporter.kt:146: FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\PresenceReporter.kt:157: FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\ResourceAlertWakeClient.kt:53: val user = FirebaseAuth.getInstance().currentUser?.takeUnless { it.isAnonymous } ?: return false
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\ResourceAlertWakeClient.kt:67: val user = FirebaseAuth.getInstance().currentUser?.takeUnless { it.isAnonymous } ?: return false
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\ResourceAlertWakeClient.kt:83: val user = FirebaseAuth.getInstance().currentUser
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\AuthorityCallReceiver.kt:48: val uid = FirebaseAuth.getInstance().currentUser?.uid
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\AuthorityCallReceiver.kt:113: FirebaseFirestore.getInstance().document("users/$uid").get().await().getString("agencySlug")
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\AuthorityCallSignaling.kt:29: firestore: FirebaseFirestore = FirebaseFirestore.getInstance(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\TurnCredentialsProvider.kt:67: val user = FirebaseAuth.getInstance().currentUser
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\sfu\SfuApiClient.kt:27: private val auth: FirebaseAuth = FirebaseAuth.getInstance(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\sfu\SfuAuthorityCallManager.kt:110: val auth = com.google.firebase.auth.FirebaseAuth.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\sfu\SfuAuthorityCallManager.kt:112: val doc = com.google.firebase.firestore.FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\messaging\call\sfu\SfuRoomClient.kt:73: private val firestore: FirebaseFirestore = FirebaseFirestore.getInstance(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\nearby\NearbyPairingServer.kt:204: uid = FirebaseAuth.getInstance().currentUser?.uid.orEmpty(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\nearby\NearbyPairingSupport.kt:24: val uid = FirebaseAuth.getInstance().currentUser?.uid.orEmpty()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\nearby\NearbyPairingSupport.kt:32: FirebaseAuth.getInstance().currentUser?.phoneNumber?.trim()?.takeIf { it.startsWith("+") }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\nearby\NearbyPairingSupport.kt:46: val myUid = FirebaseAuth.getInstance().currentUser?.uid.orEmpty()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\AdvancedSettingsViewModel.kt:21: import com.google.firebase.crashlytics.FirebaseCrashlytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\AdvancedSettingsViewModel.kt:27: runCatching { FirebaseCrashlytics.getInstance().recordException(throwable) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\MainScreen.kt:693: FirebaseAuth.getInstance().currentUser?.takeUnless { it.isAnonymous }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\NewChat.kt:117: val user = FirebaseAuth.getInstance().currentUser?.takeUnless { it.isAnonymous }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\NewChat.kt:125: FirebaseFirestore.getInstance().document("users/${user.uid}").get().await()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\NewChat.kt:342: com.google.firebase.auth.FirebaseAuth.getInstance().currentUser?.uid?.let {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\NewChatViewModel.kt:33: import com.google.firebase.crashlytics.FirebaseCrashlytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\NewChatViewModel.kt:42: runCatching { FirebaseCrashlytics.getInstance().recordException(throwable) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\SettingsViewModel.kt:27: import com.google.firebase.crashlytics.FirebaseCrashlytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\SettingsViewModel.kt:35: runCatching { FirebaseCrashlytics.getInstance().recordException(throwable) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\authority\AuthorityChannelThreadScreen.kt:224: private val auth = FirebaseAuth.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\BleChatViewModel.kt:84: import com.google.firebase.crashlytics.FirebaseCrashlytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\BleChatViewModel.kt:89: runCatching { FirebaseCrashlytics.getInstance().recordException(throwable) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:114: import com.google.firebase.crashlytics.FirebaseCrashlytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:166: runCatching { FirebaseCrashlytics.getInstance().recordException(throwable) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:1402: FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\ChatScreenViewModel.kt:2232: val myUid = FirebaseAuth.getInstance().currentUser?.uid
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\GattMeshViewModel.kt:45: import com.google.firebase.crashlytics.FirebaseCrashlytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Chat\GattMeshViewModel.kt:51: runCatching { FirebaseCrashlytics.getInstance().recordException(throwable) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\QR\QRHelpers.kt:1010: val myUid = FirebaseAuth.getInstance().currentUser?.uid?.trim().orEmpty()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\settings\ProfileViewModel.kt:23: import com.arpit.utmesh.security.FirebaseAppCheckFailures
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\settings\ProfileViewModel.kt:72: import com.google.firebase.crashlytics.FirebaseCrashlytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\settings\ProfileViewModel.kt:128: private val auth: FirebaseAuth = FirebaseAuth.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\settings\ProfileViewModel.kt:129: private val firestore: FirebaseFirestore = FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\settings\ProfileViewModel.kt:131: private val functions: FirebaseFunctions = FirebaseFunctions.getInstance(FUNCTIONS_REGION)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\settings\ProfileViewModel.kt:134: runCatching { FirebaseCrashlytics.getInstance().recordException(throwable) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\settings\ProfileViewModel.kt:683: runCatching { FirebaseCrashlytics.getInstance().recordException(error) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\settings\ProfileViewModel.kt:686: if (FirebaseAppCheckFailures.isLikelyAppCheckFailure(error)) {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\settings\ProfileViewModel.kt:1982: if (FirebaseAppCheckFailures.isLikelyAppCheckFailure(
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Tools\MetalDetectorViewModel.kt:27: import com.google.firebase.crashlytics.FirebaseCrashlytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Tools\MetalDetectorViewModel.kt:40: runCatching { FirebaseCrashlytics.getInstance().recordException(throwable) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Tools\OfflineMapViewModel.kt:10: import com.google.firebase.crashlytics.FirebaseCrashlytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Tools\OfflineMapViewModel.kt:46: runCatching { FirebaseCrashlytics.getInstance().recordException(throwable) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Tools\SignalFinderViewModel.kt:30: import com.google.firebase.crashlytics.FirebaseCrashlytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Tools\SignalFinderViewModel.kt:44: runCatching { FirebaseCrashlytics.getInstance().recordException(throwable) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Tools\WhistleViewModel.kt:18: import com.google.firebase.crashlytics.FirebaseCrashlytics
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\screens\Tools\WhistleViewModel.kt:45: runCatching { FirebaseCrashlytics.getInstance().recordException(throwable) }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\security\CertificateRenewalWorker.kt:35: val user = FirebaseAuth.getInstance().currentUser
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\security\FirebaseAppCheckFailures.kt:6: object FirebaseAppCheckFailures {
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\security\FirebaseRoleHelper.kt:47: auth: FirebaseAuth = FirebaseAuth.getInstance(),
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\security\FirebaseRoleHelper.kt:48: firestore: FirebaseFirestore = FirebaseFirestore.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\security\FirebaseRoleHelper.kt:73: auth: FirebaseAuth = FirebaseAuth.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\security\FirebaseRoleHelper.kt:104: auth: FirebaseAuth = FirebaseAuth.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\service\RfcommForegroundService.kt:1574: val uid = FirebaseAuth.getInstance().currentUser?.uid?.trim()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\service\p2p\P2pGattServerService.kt:1560: val localUid = runCatching { FirebaseAuth.getInstance().currentUser?.uid }
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\service\p2p\P2pShareResolver.kt:340: val localPeerUid = com.google.firebase.auth.FirebaseAuth.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\service\sos\SosCloudReporter.kt:240: FirebaseFunctions.getInstance(FUNCTIONS_REGION)
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\service\sos\SosCloudReporter.kt:255: val auth = FirebaseAuth.getInstance()
+D:\edi\ARU\Android\app\src\main\java\com\arpit\utmesh\sync\MobileSyncClient.kt:102: val user = FirebaseAuth.getInstance().currentUser?.takeUnless { it.isAnonymous } ?: return
