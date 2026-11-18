@@ -1191,8 +1191,8 @@ private fun markPermissionsAsRequested(context: Context, permissions: List<Strin
 private const val PERMISSION_REQUEST_PREFS = "settings_permission_requests"
 private const val PERMISSION_REQUESTED_KEY_PREFIX = "requested_"
 
-private const val SUPPORT_EMAIL = "contact@crisisconnect.network"
-private const val SUPPORT_CONTACT_URL = "https://crisisconnect.network/contact"
+private const val SUPPORT_EMAIL = "Arpit.dalal23@vit.edu"
+private const val SUPPORT_CONTACT_URL = "https://github.com/ArpitDalal05/UTMASH"
 
 /**
  * Opens the app's Play Store listing. Prefers the Play Store app via the `market://` scheme and
@@ -1259,3 +1259,5 @@ private fun openUrl(context: Context, url: String) {
         Toast.makeText(context, R.string.settings_no_app_to_handle, Toast.LENGTH_SHORT).show()
     }
 }
+
+

@@ -86,12 +86,10 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.filled.Groups
+import com.arpit.utmesh.data.database.LocalKeyStorage
 import com.arpit.utmesh.security.SecurityRepository
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.tasks.await
 import kotlinx.coroutines.withContext
 import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.TextButton
@@ -114,20 +112,12 @@ fun NewChatScreen(navController: NavController) {
     // decide whether to show the button.
     val agencySlug by produceState<String?>(initialValue = null) {
         value = withContext(Dispatchers.IO) {
-            val user = FirebaseAuth.getInstance().currentUser?.takeUnless { it.isAnonymous }
-                ?: return@withContext null
-            // The users-doc agencySlug is the authoritative "my agency" and is what the roster must
-            // target: a super-admin's device certificate can be scoped to a broader/parent panel
-            // (e.g. "afad"), and since listAuthorityRoster honours a super-admin's requested slug, a
-            // cert-first resolution would list the WRONG panel's members. Prefer the doc; the cert is
-            // only a last-resort fallback (offline / doc unreadable).
-            val fromDoc = runCatching {
-                FirebaseFirestore.getInstance().document("users/${user.uid}").get().await()
-                    .getString("agencySlug")?.trim()?.takeIf { it.isNotBlank() }
+            runCatching {
+                SecurityRepository(context)
+                    .getUsableStoredCertificateAgency()
+                    ?.trim()
+                    ?.takeIf { it.isNotBlank() }
             }.getOrNull()
-            fromDoc ?: runCatching {
-                SecurityRepository(context).getUsableStoredCertificateAgency()
-            }.getOrNull()?.trim()?.takeIf { it.isNotBlank() }
         }
     }
     val lifecycleOwner = LocalLifecycleOwner.current
@@ -338,10 +328,13 @@ fun NewChatScreen(navController: NavController) {
                     if (qrShareId.isNotBlank()) {
                         put("shareId", qrShareId)
                     }
-                    // Carry our internet-messaging identity so the scanner can reach us online later.
-                    com.google.firebase.auth.FirebaseAuth.getInstance().currentUser?.uid?.let {
-                        put("peerUid", it)
-                    }
+                    // Carry our local UT Mesh identity so the scanner can identify this node offline.
+                    LocalKeyStorage.getSavedUid(context)
+                        ?.trim()
+                        ?.takeIf { it.isNotBlank() }
+                        ?.let {
+                            put("peerUid", it)
+                        }
                     runCatching {
                         com.arpit.utmesh.messaging.MessagingIdentity(context).publicKeyBase64()
                     }.getOrNull()?.let { put("peerPublicKey", it) }
@@ -999,3 +992,7 @@ private fun currentBluetoothName(context: Context): String {
 }
 
 /** Which section of the "Kurumdan ekle" picker an entry sits in — mirrors the web messages picker. */
+
+
+
+
